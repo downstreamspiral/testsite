@@ -47,9 +47,14 @@
             border-radius: 5px;
             cursor: pointer;
             transition: 0.3s;
+            
+        }
+
+        .cancelling{
+            background-color: red;
         }
         button:hover {
-            background: #3700b3;
+            background: black;
         }
         .order-history {
             margin-top: 20px;
@@ -65,7 +70,7 @@
         
         <input type="password" placeholder="Password" />
         <button>Login</button>
-        <button>Logout</button>
+        <button class="cancelling">Cancel</button>
         
     </div>
 </body>
