@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #121212;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            width: 400px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(10px);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #f0f0f0;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: #6200ea;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #3700b3;
+        }
+        .order-history {
+            margin-top: 20px;
+            text-align: center;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Account Information</h2>
+        <input type="text" placeholder="UserName" />
+        
+        <input type="password" placeholder="Password" />
+        <button>Login</button>
+        <button>Logout</button>
+        
+    </div>
+</body>
+</html>

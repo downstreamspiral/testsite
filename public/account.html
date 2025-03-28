@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="hamburger">☰</div>
+        <div class="logo">Logo Placeholder</div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="logout">Logout</div>
+    </div>
+
+    <!-- Account Information -->
+    <div class="container">
+        <h2>Account Information</h2>
+        <div class="info">
+            <p><strong>Name:</strong> Aman</p>
+            <p><strong>Address:</strong> Noida</p>
+            <p><strong>Phone Number:</strong> +91 9034950103</p>
+        </div>
+
+        <h3>Previous Orders</h3>
+        <div class="orders">
+            <div class="order-item">Order: Laptop - Delivered on 12 Feb - Quantity: 1</div>
+            <div class="order-item">Order: Headphones - Delivered on 20 Jan - Quantity: 2</div>
+            <div class="order-item">Order: Smartphone - Delivered on 5 Jan - Quantity: 1</div>
+            <div class="order-item">Order: Coffee Mug - Delivered on 22 Dec - Quantity: 3</div>
+        </div>
+
+        <h3>Linked Cards: Debit Card</h3>
+        <div class="card censored" onclick="toggleCensor(this)">
+            <p>Aman</p>
+            <p>Card Number: XXXX XXXX XXXX 3456</p>
+            <p>Valid Thru: 12/27</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Shopping Site. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleCensor(element) {
+            element.classList.toggle('revealed');
+        }
+        window.onload = function () {
+            const card = document.querySelector('.card');
+            if (card) {
+                card.classList.add('censored');
+            }
+        }
+
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

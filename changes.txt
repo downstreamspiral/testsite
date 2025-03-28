@@ -1,0 +1,16 @@
+ make a nav bar
+ create a specific margin gap for the sides and follow it accordingly
+ add a dummy image on the side of welcome text 
+ enlarge product boxes and arrange them with respect to margin gaps from the sides
+ attempt to run the slideshow in background or maybe replace it with a video to make it more simple 
+ generate dummy sites and link it in the hamburger menu 
+ host the site and work on backend 
+
+ make a separate site to display backend logs and content from first site
+ 
+
+
+
+
+
+ backend 

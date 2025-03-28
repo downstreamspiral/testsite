@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site</title>
+    <!-- <link rel="stylesheet" href="/public/index.css"> -->
+    <link rel="stylesheet" href="sep.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="hamburger">☰</div>
+        <div class="logo">Logo Placeholder</div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="logout">Logout</div>
+    </div>
+    <!-- Navbar -->
+    <main>
+
+        <!-- Main Content -->
+        <div class="content">
+
+            <section class="first-section">
+                <div class="welcomepanel">
+                    <p>
+                        🛍️ Welcome to [Your Shop Name] Where Shopping Feels Like Magic! ✨<br>
+                        Get ready to explore a world of trendy fashion, must-have gadgets, and everyday essentials all in one place! 🏆<br>
+                        Whether you're here for style, savings, or surprises, we've got something just for you.<br>
+                        Exclusive Deals Await!<br>
+                        Shop Smart. Shop Easy.<br>
+                        Your Next Favorite Find is Just a Click Away!<br>
+                        Dive in & start shopping now!
+                    </p>
+                </div>
+                <div class="welcomeimage">
+                    <img src="/images/welcome.jpg" alt="welcome">
+                </div>
+            </section>
+
+            <section class="second-section">
+                <!-- Slideshow -->
+                <div class="slideshow">
+                    <div class="slide active"><img src="/images/slideshow/product1.jpg" alt="Slide 1"></div>
+                    <div class="slide"><img src="/images/slideshow/product2.jpg" alt="Slide 2"></div>
+                    <div class="slide"><img src="/images/product7.jpg" alt="Slide 3"></div>
+                    <div class="slide"><img src="/images/slideshow/product4.jpg" alt="Slide 4"></div>
+                </div>
+            </section>
+
+            <!-- Product Boxes -->
+            <section>
+                <div class="products">
+                    <div class="product-box"><img src="/images/product5.jpg" alt="">
+                        <div class="price-mask">Price: Rs.549.99</div>
+                    </div>
+                    <div class="product-box"><img src="/images/product6.jpg" alt="">
+                        <div class="price-mask">Price: Rs.34,000</div>
+                    </div>
+                    <div class="product-box"><img src="/images/product7.jpg" alt="">
+                        <div class="price-mask">Price: Rs.3000</div>
+                    </div>
+                    <div class="product-box"><img src="/images/slideshow/product1.jpg" alt="">
+                        <div class="price-mask">Price: Rs.35,000</div>
+                    </div>
+                    <div class="product-box"><img src="/images/slideshow/product3.jpg" alt="">
+                        <div class="price-mask">Price: Rs.1200</div>
+                    </div>
+                    <div class="product-box"><img src="/images/slideshow/product4.jpg" alt="">
+                        <div class="price-mask">Price: Rs.1100</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category Boxes -->
+            <section class="category-section">
+                <div class="categories">
+                    <div class="category-box">Accessories</div>
+                    <div class="category-box">Beauty</div>
+                    <div class="category-box">Kitchen</div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Shopping Site. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+    <script src="/public/slide.js"></script>
+</body>
+
+</html>
