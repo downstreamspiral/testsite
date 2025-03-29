@@ -50,6 +50,7 @@ main {
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .nav-menu {
@@ -160,6 +161,7 @@ main {
     transition: transform 0.3s ease;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .product-box:hover {
@@ -197,6 +199,7 @@ main {
     margin: 2rem auto;
     max-width: 1000px;
     text-align: center;
+    cursor: pointer;
 }
 
 .category-box {
