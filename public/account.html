@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
-    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="/account.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <div class="navbar">
         <div class="hamburger">☰</div>
-        <div class="logo">Logo Placeholder</div>
+        <div class="logo">Trendy Cart</div>
         <div class="nav-menu">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -53,7 +53,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 Shopping Site. All rights reserved.</p>
+            <p>&copy; 2025 Trendy Cart. All rights reserved.</p>
             <div class="footer-links">
                 <a href="#">About Us</a>
                 <a href="#">Privacy Policy</a>
@@ -76,6 +76,25 @@
 
         document.querySelector('.hamburger').addEventListener('click', () => {
             document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+
+        // Initialize the agent once at web application startup.
+      // Alternatively initialize as early on the page as possible.
+      const fpPromise = import("https://fpjscdn.net/v3/czMivB3yswmbxfRIaood").then(
+        (FingerprintJS) => FingerprintJS.load()
+      );
+
+      // Analyze the visitor when necessary.
+      fpPromise
+        .then((fp) => fp.get())
+        .then(({ requestId, visitorId }) => {
+          // Set the values for the hidden form elements
+          document.getElementById("requestId").value = requestId;
+          document.getElementById("visitorId").value = visitorId;
+
+          // Enable the submit button
+          document.getElementById("submitBtn").disabled = false;
         });
     </script>
 </body>

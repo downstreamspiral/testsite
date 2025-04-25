@@ -10,10 +10,15 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@fingerprintjs/fingerprintjs-pro-server-api": "^6.4.0",
+    "bcrypt": "^5.1.1",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
     "mongodb": "^6.15.0",
-    "mongoose": "^8.13.1"
+    "mongoose": "^8.13.1",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
   }
 }
